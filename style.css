@@ -57,7 +57,7 @@
 
 /*imagen principal, toda la pantalla*/
 #top-imagen {
-    background-image: url("/img/index/topimagen/topimg.png");
+    background-image: url("./img/index/topimagen/topimg.png");
     background-size: cover ;
     background-repeat: no-repeat;
     width: 100%;
