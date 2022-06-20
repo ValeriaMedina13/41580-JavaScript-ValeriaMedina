@@ -1,0 +1,669 @@
+
+/*quitar margenes predeterminados y colocarle una letra*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Nunito;
+   
+    
+   
+}
+
+
+#encabezado {
+    background-color:  rgb(95, 11, 11);
+    
+
+
+}
+
+.top-menu{
+    background-color: rgb(95, 11, 11);
+    width: 100%;
+    display: inline-block;
+}
+
+.top-menu ul{
+    float: right;
+
+  
+}
+.top-menu ul li {
+
+    list-style: none; /*quita el estilo*/
+    width: 110px;
+    display: inline-block;
+    background-color: rgb(95, 11, 11);
+    line-height: 30px;
+    text-align: center;
+ 
+}
+.top-menu nav ul li a {
+    color: whitesmoke;
+    text-decoration: none; /*quita decoración*/
+    display: block;
+    
+
+
+} 
+
+.top-menu nav ul li a:hover {
+    background-color: black;
+    cursor:pointer;
+}
+
+
+
+/*imagen principal, toda la pantalla*/
+#top-imagen {
+    background-image: url("/img/index/topimagen/topimg.png");
+    background-size: cover ;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 500px;
+}
+.titulo-top {
+    
+    font-size: 42px;
+    color: whitesmoke;
+    float: right;
+    margin-top: 15%;
+    font-family: Cookie;
+    margin-right: 73px;
+}
+   
+
+
+.destacados {
+    text-align: center;
+    background-color: rgb(19, 1, 1);
+    color: whitesmoke;
+
+}
+
+/*imagenes de destacados*/
+#img-destacados {
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    FONT-WEIGHT: 100;
+    background: linear-gradient(rgb(20, 4, 4) 85%, rgb(95, 11, 11));
+    align-items: center;
+    justify-content: center;
+    color: whitesmoke;
+    grid-template-rows: 350px;
+    gap: 30px;
+    
+    
+}
+
+#img-destacados:hover {
+    cursor: pointer;
+}
+
+
+#img-destacados div img {
+    background-color: whitesmoke;
+      
+
+}
+
+
+.historia {
+    flex-flow: row;
+    min-height: auto; /*altura minima*/
+    background-color: rgb(19, 1, 1);
+    color: whitesmoke;
+    text-align: justify;  
+    padding-top: 20px ;
+   /* height: 344px;*/  
+}
+
+
+#historia h2 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+
+/*contenido de historia*/
+#historia-cont {
+   width: 80%;  /*que use el 80% del espacio*/
+   margin: 0 auto;   /*arriba y abajo 0/ los costados auto*/
+ }
+
+ 
+
+/*imagen de historia float a la izq, texto al lado*/
+#historia-cont img {
+   max-width: 250px;
+   justify-content: left; /*contenido a la izq*/
+   display: flex;
+   padding: 10px;
+   text-align: left;
+   float: left;
+   margin: -25px 4px;
+   
+}
+
+
+
+.bodega {
+    padding-top: 50px;
+    text-align: center;
+    background-color: rgb(19, 1, 1);
+    color: whitesmoke;
+
+
+    
+}
+
+/*imagenes de bodega= a las de destacados*/ 
+.img-bodega {
+
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-template-rows: 350px;
+    FONT-WEIGHT: 100;
+    background: linear-gradient(rgb(20, 4, 4) 85%, rgb(95, 11, 11));
+    align-items: center;
+    justify-content: center;
+    color: whitesmoke;
+    gap: 30px;
+    
+
+   
+
+}
+
+
+
+/*video final*/
+.video {
+    display: flex;
+    background-color: black;
+    justify-content: center;
+}
+
+
+#video-info h2 {
+    color: whitesmoke;
+    text-align: center;
+    padding-top: 10px;
+}
+
+#video-info iframe {
+    padding-top: 20px;
+    justify-content: center;
+   
+}
+
+
+
+/*footer con ul li y direccion*/
+footer {
+    display: flex;
+    background: linear-gradient(rgb(31, 3, 3) 85%,  rgb(17, 3, 3));
+    color: rgb(130, 112, 12);
+   
+}
+footer nav ul li a {
+
+    list-style: none;
+    text-decoration: none;
+    display: block;
+    padding: 20px;
+    margin: 20px;
+    height: 50PX;
+    color: whitesmoke;
+}
+
+
+
+
+/*SOBRE NOSOTROS*/
+
+
+.elaboracion {
+    flex-flow: row;
+    min-height: auto;
+    background-color: rgb(19, 1, 1);
+    color: whitesmoke;
+    text-align: justify;
+    padding-top: 20px;
+   /* height: 344px;*/
+}
+
+#elaboracion h2 {
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+
+#elaboracion-cont {
+    width: 80%;  /*que use el 80% del espacio*/
+    margin: 0 auto;
+   
+}
+
+#elaboracion-cont img {
+    max-width: 250px;
+    justify-content: right; /*contenido a la derecha*/
+    display: flex;
+    padding: 10px;
+    text-align: right;
+    float: right;
+    margin: -25px 4px;
+}
+
+
+.medio-ambiente {
+    flex-flow: row;
+    min-height: auto; /*altura minima*/
+    background-color: rgb(19, 1, 1);
+    color: whitesmoke;
+    text-align: justify;  
+    padding-top: 20px ;
+    
+}
+
+
+#medio-ambiente h2 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+
+
+#medio-ambiente-cont {
+   width: 80%;  /*que use el 80% del espacio*/
+   margin: 0 auto;   /*arriba y abajo 0/ los costados auto*/
+ }
+
+ 
+
+
+#medio-ambiente-cont img {
+   max-width: 250px;
+   justify-content: left; /*contenido a la izq*/
+   display: flex;
+   padding: 10px;
+   text-align: left;
+   float: left;
+   margin: -25px 4px;
+   
+}
+
+
+
+/*CATÁLOGO*/
+
+.vinos {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color: rgb(20, 4, 4);
+    color: whitesmoke;
+    border-bottom: 20px;
+}
+
+
+/*RESERVA*/
+
+.reserva-titulo {
+    text-align: center;
+    justify-content: center;
+    
+    
+}
+
+.reserva-titulo h2 {
+    background-color: rgb(20, 4, 4);
+    padding : 25px;
+    padding-left: 40px;
+    color: whitesmoke ;
+   
+
+}
+
+.reserva-img {
+display: grid;
+grid-template-columns: 200px 200px 200px 200px;
+grid-template-rows: 350px;
+background: linear-gradient(rgb(20, 4, 4), rgb(95, 11, 11));
+gap: 30px;
+align-items: center;
+justify-content: center;
+color: whitesmoke;
+
+}
+
+.reserva-img:hover {
+    cursor: pointer;
+}
+
+
+
+
+
+/*ESPUMANTES*/
+
+.espumantes-titulo {
+    text-align: center;
+    justify-content: center;
+    
+    
+}
+
+.espumantes-titulo h2 {
+    background-color: rgb(95, 11, 11);
+    padding : 25px;
+    padding-left: 40px;
+    color: whitesmoke ;
+   
+
+}
+
+.espumantes-img {
+display: grid;
+grid-template-columns: 200px 200px;
+grid-template-rows: 350px;
+background: linear-gradient( rgb(95, 11, 11), rgb(20, 4, 4));
+gap: 30px;
+align-items: center;
+justify-content: center;
+color: whitesmoke;
+
+}
+
+.espumantes-img:hover {
+    cursor: pointer;
+}
+
+
+/*RESERVA ESPECIAL*/
+.re-titulo {
+    text-align: center;
+    justify-content: center;
+    
+    
+}
+
+.re-titulo h2 {
+    background-color: rgb(20, 4, 4);
+    padding : 25px;
+    padding-left: 40px;
+    color: whitesmoke ;
+   
+
+}
+
+.re-img {
+display: grid;
+grid-template-columns: 200px 200px;
+grid-template-rows: 350px;
+background: linear-gradient(rgb(20, 4, 4), rgb(95, 11, 11));
+gap: 30px;
+align-items: center;
+justify-content: center;
+color: whitesmoke;
+
+}
+
+.re-img:hover {
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+/*tiendas*/
+
+.tiendas {
+    background-color:rgb(95, 11, 11);
+}
+
+#tiendas-titulo {
+    text-align: center;
+    color: whitesmoke;
+}
+
+.local1 {
+    flex-flow: row;
+    min-height: auto; /*altura minima*/
+    background-color: rgb(19, 1, 1);
+    color: whitesmoke;
+    text-align: justify;  
+    padding-top: 20px ;
+    height: 300px;
+}
+
+
+#local1 h2 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+
+#local1-cont {
+   width: 80%;  
+   margin: 0 auto;   
+ }
+
+ 
+
+#local1-cont img {
+   max-width: 200px;
+   justify-content: left; /*contenido a la izq*/
+   display: flex;
+   padding: 10px;
+   text-align: left;
+   float: left;
+   margin: -25px 4px;
+   
+}
+
+#local1-cont p {
+    text-align: left;
+    
+}
+
+
+.local2 {
+    flex-flow: row;
+    min-height: auto; 
+    background-color: rgb(19, 1, 1);
+    color: whitesmoke;
+    text-align: justify;  
+    padding-top: 20px ;
+    height: 300px;
+}
+
+
+#local2 h2 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+
+#local2-cont {
+   width: 80%;  
+   margin: 0 auto;   
+ }
+
+ 
+
+#local2-cont img {
+   max-width: 200px;
+   justify-content: right; 
+   display: flex;
+   padding: 10px;
+   text-align: right;
+   float: right;
+   margin: -25px 4px;
+   
+}
+
+#local2-cont p {
+    text-align: right;
+    
+}
+.local3 {
+    flex-flow: row;
+    min-height: auto; 
+    background-color: rgb(19, 1, 1);
+    color: whitesmoke;
+    text-align: justify;  
+    padding-top: 20px ;
+    height: 300px;
+}
+
+
+#local3 h2 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+
+#local3-cont {
+   width: 80%;  
+   margin: 0 auto;   
+ }
+
+ 
+
+#local3-cont img {
+   max-width: 200px;
+   justify-content: left; 
+   display: flex;
+   padding: 10px;
+   text-align: left;
+   float: left;
+   margin: -25px 4px;
+   
+}
+
+#local3-cont p {
+    text-align: left;
+    
+}
+
+
+
+
+
+
+
+/*contacto*/
+ .contacto {
+    background: linear-gradient(rgb(20, 4, 4), rgb(95, 11, 11));
+    color: whitesmoke;
+    text-align: center;
+    height: 45px;
+
+ }
+ .formulario {
+    display: grid;
+    background: linear-gradient(rgb(95, 11, 11), rgb(20, 4, 4));
+ }
+
+ fieldset {
+    height: 131px;
+    display: grid;
+    color: whitesmoke;
+    padding: 15px 19px;
+    width: 385px;
+
+ }
+
+
+ legend {
+    color: whitesmoke;
+    font-size: x-large;
+
+ }
+
+ #mensaje {
+    color: whitesmoke;
+    padding: 8px 21px;
+   
+ }
+
+
+ #caja {
+padding-left: 2px;
+
+
+
+ }
+ .checkbox {
+    color: whitesmoke;
+    padding: 15px 5px;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*@media para celulares*/
+
+@media screen and (max-width: 480px){
+    
+    #top-imagen {
+        height: 200px;    
+    }
+   
+    #img-destacados {
+        grid-template-columns: 200px 200px;
+        grid-template-rows: 300px 300px;
+        
+    }
+    .img-bodega {
+        grid-template-columns: 200px 200px;
+        grid-template-rows: 300px 300px;
+    }
+
+    .reserva-img {
+        grid-template-columns: 200px 200px;
+        grid-template-rows: 300px 300px;
+    }
+}
+
+/*@media para tablets*/
+
+@media screen and (max-width: 1023px)
+{
+
+    #top-imagen {
+        height: 300px;    
+    }
+     
+    #img-destacados {
+        grid-template-columns: 200px 200px;
+        grid-template-rows: 300px 300px;
+        
+    }
+    .img-bodega {
+        grid-template-columns: 200px 200px;
+        grid-template-rows: 300px 300px;
+    }
+
+    .reserva-img {
+        grid-template-columns: 200px 200px;
+        grid-template-rows: 300px 300px;
+    }
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Nanum+Gothic&family=Nunito:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header id="encabezado">
+     <div class="top-menu">
+
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./sobrenosotros.html">Sobre nosotros</a></li>
+                <li><a href="./catalogo.html">Catálogo</a></li>
+                <li><a href="./tiendas.html">Tiendas</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+     </div>
+
+     <div id="top-imagen"> 
+        <div class="titulo-top">Bodega Medina</div>
+    </div>
+
+    </header>
+
+
+
+   <section class="contacto">
+       <div id="contacto-titulo"> 
+    <h1>Contacto</h1>
+</div>
+</section>
+
+<section class="formulario">
+    <form action="enviar.php" method="get">
+
+        <fieldset>
+            <legend>Datos personales</legend>
+        <div>
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" placeholder="Ingrese su nombre" required>
+        </div>
+        <div>
+
+        <label for="email">Email</label>
+        <input type="text" id="email" placeholder="Ingrese su email" required>
+        
+
+        </div>
+
+        <div>
+            <label for="number">Teléfono</label>
+            <input type="text" id="number" placeholder="Ingrese su Teléfono" required>
+        </div>
+    </fieldset>
+
+        
+        <div id="mensaje">
+            <label for="caja">Deje su mensaje</label>
+        </div>
+
+        <div id="caja">
+           
+            <textarea name="caja" id="caja" cols="55" rows="15"></textarea>
+        </div>
+        <br>
+        <div class="checkbox"> 
+            <input type="checkbox" name="acepto" id="Term-cond" required>Acepta terminos y condiciones
+            <input type="checkbox" name="news" id="news">Desea recibir novedades?
+        </div>
+        
+         
+    
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Borrar todo">
+       
+
+    </form> 
+</section>
+
+
+    <div>
+        <footer>
+            <nav>
+                <ul>
+                    <li><a href="./sobrenosotros.html">Sobre nosotros</a></li>
+                    <li><a href="./catalogo.html">Catálogo</a></li>
+                    <li><a href="./tiendas.html">Tiendas</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                    <p id="Dirección"> Dirección: Av. de las Americas km 13.200</p>
+                </ul>
+    
+            </nav>
+            
+    
+    
+        </footer>
+    </div>
+</body>
+</html>
