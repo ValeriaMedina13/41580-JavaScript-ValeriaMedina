@@ -12,13 +12,15 @@
 
 
 #encabezado {
-    background-color:  rgb(95, 11, 11);
+    background: whitesmoke;
+   
     
 
 
 }
 
-.top-menu{
+
+/* .top-menu{
     background-color: rgb(95, 11, 11);
     width: 100%;
     display: inline-block;
@@ -32,7 +34,7 @@
 .top-menu ul li {
 
     list-style: none; /*quita el estilo*/
-    width: 110px;
+   /* width: 110px;
     display: inline-block;
     background-color: rgb(95, 11, 11);
     line-height: 30px;
@@ -42,7 +44,7 @@
 .top-menu nav ul li a {
     color: whitesmoke;
     text-decoration: none; /*quita decoración*/
-    display: block;
+    /*display: block;
     
 
 
@@ -50,14 +52,14 @@
 
 .top-menu nav ul li a:hover {
     background-color: black;
-    cursor:pointer;
-}
+    cursor:pointer; 
+}*/
 
 
 
 /*imagen principal, toda la pantalla*/
 #top-imagen {
-    background-image: url("./img/index/topimagen/topimg.png");
+    background-image: url("https://vinomanos.com/wp-content/uploads/2019/01/valle-de-uco.png");
     background-size: cover ;
     background-repeat: no-repeat;
     width: 100%;
@@ -77,12 +79,11 @@
 
 .destacados {
     text-align: center;
-    background-color: rgb(19, 1, 1);
-    color: whitesmoke;
+    color: black;
 
 }
 
-/*imagenes de destacados*/
+/*imagenes de destacados
 #img-destacados {
     display: grid;
     grid-template-columns: 200px 200px 200px 200px;
@@ -106,14 +107,13 @@
     background-color: whitesmoke;
       
 
-}
+}*/
 
 
 .historia {
     flex-flow: row;
     min-height: auto; /*altura minima*/
-    background-color: rgb(19, 1, 1);
-    color: whitesmoke;
+    color: black;
     text-align: justify;  
     padding-top: 20px ;
    /* height: 344px;*/  
@@ -149,17 +149,16 @@
 
 
 .bodega {
-    padding-top: 50px;
+    
     text-align: center;
-    background-color: rgb(19, 1, 1);
-    color: whitesmoke;
+    color: black;
 
 
     
 }
 
 /*imagenes de bodega= a las de destacados*/ 
-.img-bodega {
+ /* .img-bodega {
 
     display: grid;
     grid-template-columns: 200px 200px 200px 200px;
@@ -174,20 +173,20 @@
 
    
 
-}
+}*/
 
 
 
 /*video final*/
 .video {
     display: flex;
-    background-color: black;
+    
     justify-content: center;
 }
 
 
 #video-info h2 {
-    color: whitesmoke;
+    color: black;
     text-align: center;
     padding-top: 10px;
 }
@@ -203,8 +202,8 @@
 /*footer con ul li y direccion*/
 footer {
     display: flex;
-    background: linear-gradient(rgb(31, 3, 3) 85%,  rgb(17, 3, 3));
-    color: rgb(130, 112, 12);
+    color: black;
+    background: linear-gradient(rgb(244, 241, 241) 95%, rgb(109, 221, 132));;
    
 }
 footer nav ul li a {
@@ -215,7 +214,7 @@ footer nav ul li a {
     padding: 20px;
     margin: 20px;
     height: 50PX;
-    color: whitesmoke;
+    color: black;
 }
 
 
@@ -227,8 +226,7 @@ footer nav ul li a {
 .elaboracion {
     flex-flow: row;
     min-height: auto;
-    background-color: rgb(19, 1, 1);
-    color: whitesmoke;
+    color: black;
     text-align: justify;
     padding-top: 20px;
    /* height: 344px;*/
@@ -260,8 +258,7 @@ footer nav ul li a {
 .medio-ambiente {
     flex-flow: row;
     min-height: auto; /*altura minima*/
-    background-color: rgb(19, 1, 1);
-    color: whitesmoke;
+    color: black;
     text-align: justify;  
     padding-top: 20px ;
     
@@ -302,8 +299,7 @@ footer nav ul li a {
     display: flex;
     text-align: center;
     justify-content: center;
-    background-color: rgb(20, 4, 4);
-    color: whitesmoke;
+    color: black;
     border-bottom: 20px;
 }
 
@@ -318,10 +314,9 @@ footer nav ul li a {
 }
 
 .reserva-titulo h2 {
-    background-color: rgb(20, 4, 4);
     padding : 25px;
     padding-left: 40px;
-    color: whitesmoke ;
+    color: black ;
    
 
 }
@@ -330,11 +325,10 @@ footer nav ul li a {
 display: grid;
 grid-template-columns: 200px 200px 200px 200px;
 grid-template-rows: 350px;
-background: linear-gradient(rgb(20, 4, 4), rgb(95, 11, 11));
 gap: 30px;
 align-items: center;
 justify-content: center;
-color: whitesmoke;
+color:black;
 
 }
 
@@ -356,10 +350,9 @@ color: whitesmoke;
 }
 
 .espumantes-titulo h2 {
-    background-color: rgb(95, 11, 11);
     padding : 25px;
     padding-left: 40px;
-    color: whitesmoke ;
+    color: black ;
    
 
 }
@@ -368,11 +361,10 @@ color: whitesmoke;
 display: grid;
 grid-template-columns: 200px 200px;
 grid-template-rows: 350px;
-background: linear-gradient( rgb(95, 11, 11), rgb(20, 4, 4));
 gap: 30px;
 align-items: center;
 justify-content: center;
-color: whitesmoke;
+color: black;
 
 }
 
@@ -390,10 +382,9 @@ color: whitesmoke;
 }
 
 .re-titulo h2 {
-    background-color: rgb(20, 4, 4);
     padding : 25px;
     padding-left: 40px;
-    color: whitesmoke ;
+    color: black ;
    
 
 }
@@ -402,11 +393,10 @@ color: whitesmoke;
 display: grid;
 grid-template-columns: 200px 200px;
 grid-template-rows: 350px;
-background: linear-gradient(rgb(20, 4, 4), rgb(95, 11, 11));
 gap: 30px;
 align-items: center;
 justify-content: center;
-color: whitesmoke;
+color: black;
 
 }
 
@@ -422,20 +412,17 @@ color: whitesmoke;
 
 /*tiendas*/
 
-.tiendas {
-    background-color:rgb(95, 11, 11);
-}
+
 
 #tiendas-titulo {
     text-align: center;
-    color: whitesmoke;
+    color: black;
 }
 
 .local1 {
     flex-flow: row;
     min-height: auto; /*altura minima*/
-    background-color: rgb(19, 1, 1);
-    color: whitesmoke;
+    color: black;
     text-align: justify;  
     padding-top: 20px ;
     height: 300px;
@@ -475,8 +462,7 @@ color: whitesmoke;
 .local2 {
     flex-flow: row;
     min-height: auto; 
-    background-color: rgb(19, 1, 1);
-    color: whitesmoke;
+    color: black;
     text-align: justify;  
     padding-top: 20px ;
     height: 300px;
@@ -514,8 +500,7 @@ color: whitesmoke;
 .local3 {
     flex-flow: row;
     min-height: auto; 
-    background-color: rgb(19, 1, 1);
-    color: whitesmoke;
+    color: black;
     text-align: justify;  
     padding-top: 20px ;
     height: 300px;
@@ -559,21 +544,20 @@ color: whitesmoke;
 
 /*contacto*/
  .contacto {
-    background: linear-gradient(rgb(20, 4, 4), rgb(95, 11, 11));
-    color: whitesmoke;
+   color: black;
     text-align: center;
     height: 45px;
 
  }
  .formulario {
     display: grid;
-    background: linear-gradient(rgb(95, 11, 11), rgb(20, 4, 4));
+    
  }
 
  fieldset {
     height: 131px;
     display: grid;
-    color: whitesmoke;
+    color: black;
     padding: 15px 19px;
     width: 385px;
 
@@ -581,13 +565,13 @@ color: whitesmoke;
 
 
  legend {
-    color: whitesmoke;
+    color: black;
     font-size: x-large;
 
  }
 
  #mensaje {
-    color: whitesmoke;
+    color: black;
     padding: 8px 21px;
    
  }
@@ -600,7 +584,7 @@ padding-left: 2px;
 
  }
  .checkbox {
-    color: whitesmoke;
+    color: black;
     padding: 15px 5px;
  }
 

@@ -9,21 +9,44 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Nanum+Gothic&family=Nunito:wght@200&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
 </head>
 
 <body>
     <header id="encabezado">
-    <div class="top-menu">
-        <nav>
-         <ul>
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./pages/sobrenosotros.html">Sobre nosotros</a></li>
-                <li><a href="./pages/catalogo.html">Catálogo</a></li>
-                <li><a href="./pages/tiendas.html">Tiendas</a></li>
-                <li><a href="./pages/contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-     </div>
+       
+            <nav class="navbar navbar-expand-sm ">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#opciones">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <!-- logo -->
+                <a class="navbar-brand" href="../mi-repositorio/index.html">
+                  <img src="https://i.pinimg.com/736x/a1/2d/bc/a12dbca70c5230ca1da7a2e4e73a3be2.jpg" width="30" height="30" alt="">
+                </a>
+                
+                <!-- enlaces -->
+                <div class="collapse navbar-collapse" id="opciones">   
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link color-white" href="../mi-repositorio/index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../mi-repositorio/pages/sobrenosotros.html">Sobre Nosotros </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../mi-repositorio/pages/catalogo.html">Catálogo</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../mi-repositorio/pages/tiendas.html">Tiendas</a>
+                    </li>    
+                    <li class="nav-item">
+                        <a class="nav-link" href="../mi-repositorio/pages/contacto.html">Contacto</a>
+                      </li>          
+                  </ul>
+                </div>
+              </nav>
 
      <div id="top-imagen"> 
         <div class="titulo-top">Bodega Medina</div>
@@ -38,21 +61,28 @@
 
 
         <div id="img-destacados">
-            <div> 
-                <img src="https://bacan.uy/pub/media/catalog/product/cache/f4433f9f7f81a8f7ae5c60bfae4c38ff/1/1/11373_1.jpg" alt="Malbec"> Malbec 2012
-            </div>
-            <div>
-                <img src="https://bacan.uy/pub/media/catalog/product/cache/f4433f9f7f81a8f7ae5c60bfae4c38ff/1/1/11965.jpg" alt="Cabernet-sauvignon">Cabernet-sauvignon
-            </div>
-            <div>
-                <img src="https://bacan.uy/pub/media/catalog/product/cache/f4433f9f7f81a8f7ae5c60bfae4c38ff/1/0/10071_1_1.jpg" alt="Blanco"> Blanc Brut
-            </div>
-            
-            <div> 
-                <img src="https://bacan.uy/pub/media/catalog/product/cache/f4433f9f7f81a8f7ae5c60bfae4c38ff/1/0/10056.jpg" alt="Rosado">Rosé
-            </div>
-           
-        </div>
+            <div class="container mt-5 mb-5">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-xl-3 p-3 bg-secondary">
+                      <img src="https://bacan.uy/pub/media/catalog/product/cache/f4433f9f7f81a8f7ae5c60bfae4c38ff/1/1/11373_1.jpg" alt="Malbec"> Malbec 2012
+                    
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-3 p-3 bg-success">
+                      <img src="https://bacan.uy/pub/media/catalog/product/cache/f4433f9f7f81a8f7ae5c60bfae4c38ff/1/1/11965.jpg" alt="Cabernet-sauvignon">Cabernet 
+                        
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-3 p-3 bg-secondary">
+                      <img src="https://bacan.uy/pub/media/catalog/product/cache/f4433f9f7f81a8f7ae5c60bfae4c38ff/1/0/10071_1_1.jpg" alt="Blanco"> Blanc Brut
+                        
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-3 p-3 bg-success">
+                      <img src="https://bacan.uy/pub/media/catalog/product/cache/f4433f9f7f81a8f7ae5c60bfae4c38ff/1/0/10056.jpg" alt="Rosado">Rosé
+        
+                      
+                  </div>
+                </div>
+              </div>
+        
 
     </section>
     
@@ -75,28 +105,38 @@
             <h2>Bodega</h2>
         </div>
     
+        <div class="container mt-5 mb-5">
+            <div class="row">
+                <div class="col-12 col-md-6 col-xl-3 p-3 bg-secondary">
+                  <img src="../mi-repositorio/img/index/bodega/barricas.png" width="300px" alt="barricas"> 
+                  <p>Nuestras barricas de roble perfectamente conservadas</p> 
+                
+                </div>
+                <div class="col-12 col-md-6 col-xl-3 p-3 bg-success">
+                  <img src="../mi-repositorio/img/index/bodega/vinedos.png" width="300px" alt="vinedos">
+                  <p>Conozca desde cerca las mejores uvas</p> 
+                    
+                </div>
+                <div class="col-12 col-md-6 col-xl-3 p-3 bg-secondary">
+                  <img src="../mi-repositorio/img/index/bodega/museo.png" width="300px" alt="museo"> 
+                  <p>Nuestro pequeño museo, nuestros inicios</p>
+                    
+                </div>
+                <div class="col-12 col-md-6 col-xl-3 p-3 bg-success">
+                  <img src="../mi-repositorio/img/index/bodega/almuerzo.png" width="300px" alt="almuerzo">
+                  <p>Disfrute de nuestro excelente restaurant</p>
     
+                  
+              </div>
+            </div>
+          </div>
     
-        <div class="img-bodega">
 
-            <div>
-            <img src="./img/index/bodega/barricas.png" width="200px" alt="barricas"> Nuestras barricas de roble perfectamente conservadas
-            </div>
+</section>
+    
+        
 
-            <div>
-                <img src="./img/index/bodega/vinedos.png" width="200px" alt="vinedos"> Conozca desde cerca las mejores uvas
-            </div>
-
-            <div>
-                <img src="./img/index/bodega/museo.png" width="200px" alt= "catadevinos"> Nuestro pequeño museo, nuestros inicios 
-            </div>
-
-            <div>
-                <img src="./img/index/bodega/almuerzo.png" width="200px" alt="almuerzo">Disfrute de nuestro excelente restaurant
-            </div>
-        </div> 
-
-    </section>
+   
 
     <section class="video">
 
@@ -106,22 +146,54 @@
         </div>
     </section>
 
-<div>
     <footer>
-        <nav>
-            <ul>
-                <li><a href="./pages/sobrenosotros.html">Sobre nosotros</a></li>
-                <li><a href="./pages/catalogo.html">Catálogo</a></li>
-                <li><a href="./pages/tiendas.html">Tiendas</a></li>
-                <li><a href="./pages/contacto.html">Contacto</a></li>
-                <p> Dirección: Av. de las Americas km 13.200</p>
-            </ul>
 
-        </nav>
-       
-    </footer>
-</div>
-
+        <div>
+          <nav class="navbar navbar-expand-sm ">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#opciones">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              
+              <!-- logo -->
+              <a class="navbar-brand" href="../mi-repositorio/index.html">
+                <img src="https://i.pinimg.com/736x/a1/2d/bc/a12dbca70c5230ca1da7a2e4e73a3be2.jpg" width="30" height="30" alt="">
+              </a>
+              
+              <!-- enlaces -->
+              <div class="collapse navbar-collapse" id="opciones">   
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link color-white" href="../mi-repositorio/index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../mi-repositorio/pages/sobrenosotros.html">Sobre Nosotros </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../mi-repositorio/pages/catalogo.html">Catálogo</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../mi-repositorio/pages/tiendas.html">Tiendas</a>
+                  </li>    
+                  <li class="nav-item">
+                      <a class="nav-link" href="../mi-repositorio/pages/contacto.html">Contacto</a>
+                    </li>          
+                </ul>
+              </div>
+          
+      
+              
+            </nav>
+        </div>
+          </footer>
+        
+      
+            <div>
+              <div class="text-center text-light p-2 pt-4" style="background-color: rgba(0, 0, 0, 0.2);">
+                <p>© 2022 Bodega Medina - Todos los derechos reservados</p>
+            </div>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> 
 
 </body>
 </html>
