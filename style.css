@@ -223,13 +223,13 @@ footer nav ul li a {
 /*SOBRE NOSOTROS*/
 
 
-.elaboracion {
+/*.elaboracion {
     flex-flow: row;
     min-height: auto;
     color: black;
     text-align: justify;
     padding-top: 20px;
-   /* height: 344px;*/
+   /* height: 344px;
 }
 
 #elaboracion h2 {
@@ -239,14 +239,14 @@ footer nav ul li a {
 }
 
 #elaboracion-cont {
-    width: 80%;  /*que use el 80% del espacio*/
+    width: 80%;  /*que use el 80% del espacio
     margin: 0 auto;
    
 }
 
 #elaboracion-cont img {
     max-width: 250px;
-    justify-content: right; /*contenido a la derecha*/
+    justify-content: right; /*contenido a la derecha
     display: flex;
     padding: 10px;
     text-align: right;
@@ -257,7 +257,7 @@ footer nav ul li a {
 
 .medio-ambiente {
     flex-flow: row;
-    min-height: auto; /*altura minima*/
+    min-height: auto; /*altura minima
     color: black;
     text-align: justify;  
     padding-top: 20px ;
@@ -273,8 +273,8 @@ footer nav ul li a {
 
 
 #medio-ambiente-cont {
-   width: 80%;  /*que use el 80% del espacio*/
-   margin: 0 auto;   /*arriba y abajo 0/ los costados auto*/
+   width: 80%;  /*que use el 80% del espacio
+   margin: 0 auto;   /*arriba y abajo 0/ los costados auto
  }
 
  
@@ -282,7 +282,7 @@ footer nav ul li a {
 
 #medio-ambiente-cont img {
    max-width: 250px;
-   justify-content: left; /*contenido a la izq*/
+   justify-content: left; /*contenido a la izq
    display: flex;
    padding: 10px;
    text-align: left;
