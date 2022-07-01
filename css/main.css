@@ -1,0 +1,113 @@
+@charset "UTF-8";
+/*inicio*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Nunito;
+}
+
+#top-imagen {
+  background-image: url("https://vinomanos.com/wp-content/uploads/2019/01/valle-de-uco.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 500px;
+}
+#top-imagen .titulo-top {
+  font-size: 42px;
+  color: whitesmoke;
+  float: right;
+  margin-top: 15%;
+  font-family: Cookie;
+  margin-right: 73px;
+}
+
+.destacados {
+  text-align: center;
+  color: black;
+}
+
+.bodega {
+  text-align: center;
+  color: black;
+}
+.bodega #bodega {
+  text-align: center;
+}
+
+.video {
+  display: flex;
+  justify-content: center;
+}
+.video #video-info h2 {
+  color: black;
+  text-align: center;
+  padding-top: 10px;
+}
+.video #video-info iframe {
+  padding: top 20px;
+  justify-content: center;
+}
+
+/*catálogo*/
+.vinos {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  color: black;
+  border-bottom: 20px;
+}
+
+.reserva .reserva-titulo {
+  text-align: center;
+  justify-content: center;
+}
+.reserva .reserva-titulo h2 {
+  padding: 25px;
+  padding-left: 40px;
+  color: black;
+}
+
+.espumantes .espumantes-titulo {
+  text-align: center;
+  justify-content: center;
+}
+.espumantes .espumantes-titulo h2 {
+  padding: 25px;
+  padding-left: 40px;
+  color: black;
+}
+
+.reserva-especial .re-titulo {
+  text-align: center;
+  justify-content: center;
+}
+.reserva-especial .re-titulo h2 {
+  padding: 25px;
+  padding-left: 40px;
+  color: black;
+}
+
+.tiendas #tiendas-titulo {
+  text-align: center;
+  color: black;
+}
+
+.contacto {
+  color: black;
+  text-align: center;
+  height: 45px;
+}
+
+@media screen and (max-width: 480px) {
+  #top-imagen {
+    height: 200px;
+  }
+}
+/*@media para tablets*/
+@media screen and (max-width: 1023px) {
+  #top-imagen {
+    height: 300px;
+  }
+}/*# sourceMappingURL=main.css.map */
