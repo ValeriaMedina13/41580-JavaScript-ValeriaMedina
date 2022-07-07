@@ -29,6 +29,30 @@
   color: black;
 }
 
+/* mixin */
+.masinfo--destacados {
+  display: inline-block;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 25px;
+  text-decoration: none;
+  background: rgba(50, 205, 71, 0.714);
+  color: black;
+}
+
+.masinfo--tiendas {
+  display: inline-block;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 25px;
+  text-decoration: none;
+  /*background: $colorB;*/
+  color: black;
+  background: rgb(140, 213, 138);
+  padding: 10px;
+  font-weight: bold;
+}
+
 .bodega {
   text-align: center;
   color: black;
@@ -48,7 +72,19 @@
 }
 .video #video-info iframe {
   padding: top 20px;
-  justify-content: center;
+}
+
+/* each */
+.bg-whitesmoke {
+  background-color: whitesmoke;
+}
+
+.bg-black {
+  background-color: black;
+}
+
+.bg-gray {
+  background-color: gray;
 }
 
 /*catálogo*/
@@ -66,6 +102,7 @@
 }
 .reserva .reserva-titulo h2 {
   padding: 25px;
+  /*operaciones*/
   padding-left: 40px;
   color: black;
 }
@@ -76,6 +113,7 @@
 }
 .espumantes .espumantes-titulo h2 {
   padding: 25px;
+  /*operaciones*/
   padding-left: 40px;
   color: black;
 }
@@ -86,6 +124,7 @@
 }
 .reserva-especial .re-titulo h2 {
   padding: 25px;
+  /*operaciones*/
   padding-left: 40px;
   color: black;
 }

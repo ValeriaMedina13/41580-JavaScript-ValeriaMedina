@@ -2,10 +2,7 @@
 
 $colorB: black;
 $colorW: whitesmoke;
-$padding: 25px;
-
-
-
+$padding: 50px;
 
 
 
@@ -41,6 +38,29 @@ $padding: 25px;
     color: $colorB;
 }
 
+/* mixin */
+@mixin masinfo {
+    display: inline-block;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 25px;
+    text-decoration: none;
+   
+}
+.masinfo--destacados {
+    @include masinfo();
+    background: rgba(50, 205, 71, 0.714);
+    color: $colorB;
+}
+.masinfo--tiendas {
+    @include masinfo();
+    /*background: $colorB;*/
+    color: $colorB;
+    background: rgb(140, 213, 138);
+    padding: 10px;
+    font-weight: bold;
+}
+
 
 
 .bodega {
@@ -66,10 +86,19 @@ $padding: 25px;
 
         iframe {
             padding: top 20px;
-            justify-content: center;
+            
         }
     }
 }
+
+/* each */
+@each $background in whitesmoke, black, gray {
+    .bg-#{$background} {
+        background-color: $background;
+    }
+}
+
+
 
 /*catálogo*/
 
@@ -87,7 +116,7 @@ $padding: 25px;
         justify-content: center;
 
         h2 {
-            padding: $padding;
+            padding: $padding / 2;/*operaciones*/
             padding-left: 40px;
             color: $colorB;
         }
@@ -100,7 +129,7 @@ $padding: 25px;
         justify-content: center;
 
         h2 {
-            padding: $padding;
+            padding: $padding / 2; /*operaciones*/
             padding-left: 40px;
             color: $colorB;
         }
@@ -113,7 +142,7 @@ $padding: 25px;
         justify-content: center;
 
         h2 {
-            padding: $padding;
+            padding: $padding / 2; /*operaciones*/
             padding-left: 40px;
             color: $colorB;
         }
