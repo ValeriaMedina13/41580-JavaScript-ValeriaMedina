@@ -5,6 +5,20 @@ $colorW: whitesmoke;
 $padding: 50px;
 
 
+/*colores*/
+.bg01 {
+    background-color: #4d002b;
+}
+.bg02 {
+    background-color: wheat;
+}
+.color01 {
+    color: #4d002b;
+}
+
+
+
+
 
 /*inicio*/
 
@@ -13,8 +27,10 @@ $padding: 50px;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: Nunito;
+    font-family: Montserrat;
 }
+
+
 
 #top-imagen {
     background-image: url("https://vinomanos.com/wp-content/uploads/2019/01/valle-de-uco.png");
@@ -26,11 +42,79 @@ $padding: 50px;
     .titulo-top {
         font-size: 42px;
         color: $colorW;
-        float: right;
+        float: left;
         margin-top: 15%;
         font-family: Cookie;
         margin-right: 73px;
     }
+}
+
+#top-imagen1 {
+    background-image: url("https://www.revistainternos.com.ar/v2/wp-content/uploads/2022/04/InterNos-Maqueta-Foto-Portada-Notas-20.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 500px;
+
+    .titulo-top1 {
+        font-size: 42px;
+        color: $colorW;
+        float: left;
+        margin-top: 15%;
+        margin-left: 251px;
+        background-color: #4d002b; 
+    }
+}
+
+#top-imagen2 {
+    background-image: url("https://www.cocinayvino.com/wp-content/uploads/2018/01/26772685_ml.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 500px;
+
+    .titulo-top2 {
+        font-size: 42px;
+        color: $colorW;
+        float: left;
+        margin-top: 15%;
+        margin-left: 251px;
+        background-color: #4d002b; 
+    }
+}
+
+#top-imagen3 {
+    background-image: url("https://www.vinetur.com/imagenes/2018/julio/19/bodeguero_vinedos.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 500px;
+
+    .titulo-top3 {
+        font-size: 42px;
+        color: $colorW;
+        float: left;
+        margin-top: 15%;
+        margin-left: 251px;
+        background-color: #4d002b; 
+    }
+}
+
+#top-imagen4 {
+    background-image: url("https://media.traveler.es/photos/61376e8cea50dbd37eadf885/16:9/w_1792,h_1008,c_limit/134679.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 500px;
+
+    .titulo-top4 {
+        font-size: 42px;
+        color: $colorW;
+        float: left;
+        margin-top: 15%;
+        margin-left: 251px;
+        background-color: #4d002b; 
+}
 }
 
 .destacados {
@@ -49,14 +133,12 @@ $padding: 50px;
 }
 .masinfo--destacados {
     @include masinfo();
-    background: rgba(50, 205, 71, 0.714);
-    color: $colorB;
+    color: whitesmoke
 }
 .masinfo--tiendas {
     @include masinfo();
     /*background: $colorB;*/
     color: $colorB;
-    background: rgb(140, 213, 138);
     padding: 10px;
     font-weight: bold;
 }
@@ -79,7 +161,6 @@ $padding: 50px;
 
     #video-info {
         h2 {
-            color: $colorB;
             text-align: center;
             padding-top: 10px;
         }
@@ -97,6 +178,11 @@ $padding: 50px;
         background-color: $background;
     }
 }
+@each $color in whitesmoke, black {
+    .color-#{$color} {
+        color: $color;
+    }
+}
 
 
 
@@ -108,9 +194,22 @@ $padding: 50px;
     justify-content: center;
     color: $colorB;
     border-bottom: 20px;
+    font-weight: bold;
+    h1 {
+        font-weight: bold;
+    }
 }
 
+.svg {
+    text-align: center;
+    justify-content: center;
+}
+
+
 .reserva {
+    justify-content: center;
+    text-align: center;
+
     .reserva-titulo {
         text-align: center;
         justify-content: center;
@@ -119,11 +218,14 @@ $padding: 50px;
             padding: $padding / 2;/*operaciones*/
             padding-left: 40px;
             color: $colorB;
+            font-weight: bold;
         }
     }
 }
 
 .espumantes {
+    justify-content: center;
+    text-align: center;
     .espumantes-titulo {
         text-align: center;
         justify-content: center;
@@ -132,11 +234,14 @@ $padding: 50px;
             padding: $padding / 2; /*operaciones*/
             padding-left: 40px;
             color: $colorB;
+            font-weight: bold;
         }
     }
 }
 
 .reserva-especial {
+    justify-content: center;
+    text-align: center;
     .re-titulo {
         text-align: center;
         justify-content: center;
@@ -145,6 +250,7 @@ $padding: 50px;
             padding: $padding / 2; /*operaciones*/
             padding-left: 40px;
             color: $colorB;
+            font-weight: bold;
         }
     }
 }
@@ -159,7 +265,7 @@ $padding: 50px;
 
 .contacto {
     color: $colorB;
-    text-align: center;
+    margin-left: 20px;
     height: 45px;
 }
 
@@ -168,7 +274,45 @@ $padding: 50px;
 
     #top-imagen {
         height: 200px;
+        
     }
+    #top-imagen1 {
+        height: 200px;
+        .titulo-top1 {
+            font-size: 30px;
+            color: $colorW;
+            float: right;
+            background-color: #4d002b; 
+        }
+    }
+    #top-imagen2 {
+        height: 200px;
+        .titulo-top2 {
+            font-size: 30px;
+            color: $colorW;
+            float: right;
+            background-color: #4d002b; 
+        }
+    }
+    #top-imagen3 {
+        height: 200px;
+        .titulo-top3 {
+            font-size: 30px;
+            color: $colorW;
+            float: right;
+            background-color: #4d002b; 
+        }
+    }
+    #top-imagen4 {
+        height: 200px;
+        .titulo-top4 {
+            font-size: 30px;
+            color: $colorW;
+            float: right;
+            background-color: #4d002b; 
+        }
+    }
+    
 }
 
 
@@ -177,6 +321,18 @@ $padding: 50px;
 @media screen and (max-width: 1023px) {
 
     #top-imagen {
+        height: 300px;
+    }
+    #top-imagen1 {
+        height: 300px;
+    }
+    #top-imagen2 {
+        height: 300px;
+    }
+    #top-imagen3 {
+        height: 300px;
+    }
+    #top-imagen4 {
         height: 300px;
     }
 }

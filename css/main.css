@@ -1,11 +1,24 @@
 @charset "UTF-8";
 /*variables*/
+/*colores*/
+.bg01 {
+  background-color: #4d002b;
+}
+
+.bg02 {
+  background-color: wheat;
+}
+
+.color01 {
+  color: #4d002b;
+}
+
 /*inicio*/
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: Nunito;
+  font-family: Montserrat;
 }
 
 #top-imagen {
@@ -18,10 +31,74 @@
 #top-imagen .titulo-top {
   font-size: 42px;
   color: whitesmoke;
-  float: right;
+  float: left;
   margin-top: 15%;
   font-family: Cookie;
   margin-right: 73px;
+}
+
+#top-imagen1 {
+  background-image: url("https://www.revistainternos.com.ar/v2/wp-content/uploads/2022/04/InterNos-Maqueta-Foto-Portada-Notas-20.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 500px;
+}
+#top-imagen1 .titulo-top1 {
+  font-size: 42px;
+  color: whitesmoke;
+  float: left;
+  margin-top: 15%;
+  margin-left: 251px;
+  background-color: #4d002b;
+}
+
+#top-imagen2 {
+  background-image: url("https://www.cocinayvino.com/wp-content/uploads/2018/01/26772685_ml.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 500px;
+}
+#top-imagen2 .titulo-top2 {
+  font-size: 42px;
+  color: whitesmoke;
+  float: left;
+  margin-top: 15%;
+  margin-left: 251px;
+  background-color: #4d002b;
+}
+
+#top-imagen3 {
+  background-image: url("https://www.vinetur.com/imagenes/2018/julio/19/bodeguero_vinedos.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 500px;
+}
+#top-imagen3 .titulo-top3 {
+  font-size: 42px;
+  color: whitesmoke;
+  float: left;
+  margin-top: 15%;
+  margin-left: 251px;
+  background-color: #4d002b;
+}
+
+#top-imagen4 {
+  background-image: url("https://media.traveler.es/photos/61376e8cea50dbd37eadf885/16:9/w_1792,h_1008,c_limit/134679.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 500px;
+}
+#top-imagen4 .titulo-top4 {
+  font-size: 42px;
+  color: whitesmoke;
+  float: left;
+  margin-top: 15%;
+  margin-left: 251px;
+  background-color: #4d002b;
 }
 
 .destacados {
@@ -36,8 +113,7 @@
   border: 2px solid black;
   border-radius: 25px;
   text-decoration: none;
-  background: rgba(50, 205, 71, 0.714);
-  color: black;
+  color: whitesmoke;
 }
 
 .masinfo--tiendas {
@@ -48,7 +124,6 @@
   text-decoration: none;
   /*background: $colorB;*/
   color: black;
-  background: rgb(140, 213, 138);
   padding: 10px;
   font-weight: bold;
 }
@@ -66,7 +141,6 @@
   justify-content: center;
 }
 .video #video-info h2 {
-  color: black;
   text-align: center;
   padding-top: 10px;
 }
@@ -87,6 +161,14 @@
   background-color: gray;
 }
 
+.color-whitesmoke {
+  color: whitesmoke;
+}
+
+.color-black {
+  color: black;
+}
+
 /*catálogo*/
 .vinos {
   display: flex;
@@ -94,39 +176,60 @@
   justify-content: center;
   color: black;
   border-bottom: 20px;
+  font-weight: bold;
+}
+.vinos h1 {
+  font-weight: bold;
 }
 
+.svg {
+  text-align: center;
+  justify-content: center;
+}
+
+.reserva {
+  justify-content: center;
+  text-align: center;
+}
 .reserva .reserva-titulo {
   text-align: center;
   justify-content: center;
 }
 .reserva .reserva-titulo h2 {
-  padding: 25px;
-  /*operaciones*/
+  padding: 25px; /*operaciones*/
   padding-left: 40px;
   color: black;
+  font-weight: bold;
 }
 
+.espumantes {
+  justify-content: center;
+  text-align: center;
+}
 .espumantes .espumantes-titulo {
   text-align: center;
   justify-content: center;
 }
 .espumantes .espumantes-titulo h2 {
-  padding: 25px;
-  /*operaciones*/
+  padding: 25px; /*operaciones*/
   padding-left: 40px;
   color: black;
+  font-weight: bold;
 }
 
+.reserva-especial {
+  justify-content: center;
+  text-align: center;
+}
 .reserva-especial .re-titulo {
   text-align: center;
   justify-content: center;
 }
 .reserva-especial .re-titulo h2 {
-  padding: 25px;
-  /*operaciones*/
+  padding: 25px; /*operaciones*/
   padding-left: 40px;
   color: black;
+  font-weight: bold;
 }
 
 .tiendas #tiendas-titulo {
@@ -136,7 +239,7 @@
 
 .contacto {
   color: black;
-  text-align: center;
+  margin-left: 20px;
   height: 45px;
 }
 
@@ -144,10 +247,58 @@
   #top-imagen {
     height: 200px;
   }
+  #top-imagen1 {
+    height: 200px;
+  }
+  #top-imagen1 .titulo-top1 {
+    font-size: 30px;
+    color: whitesmoke;
+    float: right;
+    background-color: #4d002b;
+  }
+  #top-imagen2 {
+    height: 200px;
+  }
+  #top-imagen2 .titulo-top2 {
+    font-size: 30px;
+    color: whitesmoke;
+    float: right;
+    background-color: #4d002b;
+  }
+  #top-imagen3 {
+    height: 200px;
+  }
+  #top-imagen3 .titulo-top3 {
+    font-size: 30px;
+    color: whitesmoke;
+    float: right;
+    background-color: #4d002b;
+  }
+  #top-imagen4 {
+    height: 200px;
+  }
+  #top-imagen4 .titulo-top4 {
+    font-size: 30px;
+    color: whitesmoke;
+    float: right;
+    background-color: #4d002b;
+  }
 }
 /*@media para tablets*/
 @media screen and (max-width: 1023px) {
   #top-imagen {
+    height: 300px;
+  }
+  #top-imagen1 {
+    height: 300px;
+  }
+  #top-imagen2 {
+    height: 300px;
+  }
+  #top-imagen3 {
+    height: 300px;
+  }
+  #top-imagen4 {
     height: 300px;
   }
 }/*# sourceMappingURL=main.css.map */
