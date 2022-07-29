@@ -29,12 +29,13 @@
   height: 500px;
 }
 #top-imagen .titulo-top {
-  font-size: 42px;
+  font-size: 62px;
   color: whitesmoke;
   float: left;
   margin-top: 15%;
+  margin-left: 100px;
   font-family: Cookie;
-  margin-right: 73px;
+  margin-right: 100px;
 }
 
 #top-imagen1 {
@@ -47,6 +48,7 @@
 #top-imagen1 .titulo-top1 {
   font-size: 42px;
   color: whitesmoke;
+  text-align: center;
   float: left;
   margin-top: 15%;
   margin-left: 251px;
@@ -235,6 +237,41 @@
 .tiendas #tiendas-titulo {
   text-align: center;
   color: black;
+}
+
+.img-relative {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 0 !important;
+}
+.img-relative .texto-ocul {
+  display: none;
+  position: absolute;
+  background: rgba(255, 3, 3, 0.7);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  text-align: center;
+  color: whitesmoke;
+  font-weight: bold;
+  padding-top: 25px;
+}
+.img-relative .texto-ocul a {
+  text-decoration: none;
+  color: #ac9ca5;
+}
+
+.img-relative:hover {
+  filter: grayscale(100%);
+}
+
+.img-relative:hover .texto-ocul {
+  display: block;
+  cursor: pointer;
 }
 
 .contacto {

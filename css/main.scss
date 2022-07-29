@@ -40,12 +40,13 @@ $padding: 50px;
     height: 500px;
 
     .titulo-top {
-        font-size: 42px;
+        font-size: 62px;
         color: $colorW;
         float: left;
         margin-top: 15%;
+        margin-left: 100px;
         font-family: Cookie;
-        margin-right: 73px;
+        margin-right: 100px;
     }
 }
 
@@ -59,6 +60,7 @@ $padding: 50px;
     .titulo-top1 {
         font-size: 42px;
         color: $colorW;
+        text-align: center;
         float: left;
         margin-top: 15%;
         margin-left: 251px;
@@ -262,6 +264,51 @@ $padding: 50px;
         color: $colorB;
     }
 }
+
+
+.img-relative {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 0 !important;
+    
+
+    .texto-ocul {
+        display: none;
+        position: absolute;
+        background: rgba(255, 3, 3, 0.7);
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        text-align: center;
+        color: whitesmoke;
+        font-weight: bold;
+        padding-top: 25px;
+            a{
+            text-decoration: none;
+            color: #ac9ca5;
+        
+        
+            }
+  
+    }   
+}
+        
+    
+.img-relative:hover {
+    filter: grayscale(100%);
+    
+}
+
+.img-relative:hover .texto-ocul {
+    display: block;
+    cursor: pointer;
+}
+
+
 
 .contacto {
     color: $colorB;
