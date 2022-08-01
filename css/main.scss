@@ -122,6 +122,11 @@ $padding: 50px;
 .destacados {
     text-align: center;
     color: $colorB;
+    h2 {
+        text-shadow: -2px 1px 0 #bbb6b6;
+
+    }
+    
 }
 
 /* mixin */
