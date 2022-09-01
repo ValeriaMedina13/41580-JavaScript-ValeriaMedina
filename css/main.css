@@ -187,6 +187,10 @@
   font-weight: bold;
 }
 
+.d-ocultar {
+  display: none;
+}
+
 .svg {
   text-align: center;
   justify-content: center;

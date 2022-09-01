@@ -18,6 +18,7 @@
     <meta name="description" content="Bodega de vinos, con más de 100 años de tradición. Ubicados en la cuidad de San José, Uruguay">
 </head>
 <body>
+  <script src="../js/main.js"></script>
     <header id="encabezado">
        
         <nav class="navbar navbar-expand-sm ">
@@ -32,7 +33,7 @@
             
             <!-- enlaces -->
             <div class="collapse navbar-collapse" id="opciones">   
-              <ul class="navbar-nav">
+              <ul class="navbar-nav nav-menu">
                 <li class="nav-item">
                   <a class="nav-link color-white" href="../index.html">Inicio</a>
                 </li>
@@ -83,7 +84,12 @@
               <div class="col-6 col-md-6 col-xl-3 p-3 rounded border border-white bg01">
                 <img src="https://bacan.uy/pub/media/catalog/product/cache/f4433f9f7f81a8f7ae5c60bfae4c38ff/1/0/10586.jpg" alt="Marselan">
                 <h5 class="color-whitesmoke"><b>Marselan</b></h5> 
-                <p class="color-whitesmoke">Marselan es una variedad de vino tinto francés que es un cruce entre Cabernet Sauvignon y Garnacha.</p>
+                <p class="color-whitesmoke">Marselan es una variedad de vino tinto francés que es un cruce entre Cabernet Sauvignon y Garnacha. Ideal con pastas.</p>
+                <br>
+                <p class="color-whitesmoke">Precio $ 520 iva inc</p>
+                <br>
+                <button class="masinfo masinfo--destacados bg02 p-2 color-black" onclick="agregarAlCarrito('Marcelan', 520)">Agregar al carrito</button>
+                
               </div>
               
             
@@ -91,18 +97,31 @@
                 <img src="https://bacan.uy/pub/media/catalog/product/cache/f4433f9f7f81a8f7ae5c60bfae4c38ff/1/1/11965.jpg" alt="Cabernet">
                 <h5><b>Cabernet Franc</b></h5> 
                 <p>El vino cabernet franc, como buen tinto, debe servirse a una temperatura que oscile entre los 17 y los 18 grados</p>
-                  
+                <br>
+                <p>Precio $ 742 iva inc</p>
+                <br>
+                <button class="masinfo masinfo--destacados bg01 p-2" onclick="agregarAlCarrito('Cabernet Franc', 742)">Agregar al carrito</button>
+                
               </div>
               <div class="col-6 col-md-6 col-xl-3 p-3 rounded border border-white bg01">
                 <img src="https://bacan.uy/pub/media/catalog/product/cache/f4433f9f7f81a8f7ae5c60bfae4c38ff/1/1/11968.jpg" alt="albarino"> 
                   <h5 class="color-whitesmoke"><b>Albariño</b></h5>
-                  <p class="color-whitesmoke">El Albariño es un vino de sabor floral y afrutado, y sus aires balsámicos y especiados se hacen sentir en su particular olor</p>
-              </div>
+                  <p class="color-whitesmoke">El Albariño es un vino de sabor floral y afrutado, y sus aires balsámicos y especiados se hacen sentir en su particular aroma.</p>
+                  <br>
+                <p class="color-whitesmoke">Precio $ 780 iva inc</p>
+                <br>
+                <button class="masinfo masinfo--destacados bg02 p-2 color-black" onclick="agregarAlCarrito('Albarino', 780)">Agregar al carrito</button>
+                
+                </div>
               <div class="col-6 col-md-6 col-xl-3 p-3 rounded border border-white bg02">
                 <img src="https://bacan.uy/pub/media/catalog/product/cache/f4433f9f7f81a8f7ae5c60bfae4c38ff/1/0/10750_2.jpg" alt="Pinot">
                 <h5><b> Noir Rosé</b></h5>
-                <p>Con un delicado y tenue color salmón, nuestro Pinot Noir Rosé se caracteriza aromáticamente por su frescura y delicadeza, donde resaltan las notas a cereza y fresas</p>
-  
+                <p>Con un delicado y tenue color salmón, nuestro Pinot Noir Rosé se caracteriza aromáticamente por su frescura y delicadeza.</p>
+                <br>
+                <p>Precio $ 920 iva inc</p>
+                <br>
+                <button class="masinfo masinfo--destacados bg01 p-2" onclick="agregarAlCarrito('nairRose', 920)">Agregar al carrito</button>
+                
                 
             </div>
           </div>
@@ -115,31 +134,48 @@
 
         <div class="espumantes-titulo">
             <h2 class="animate__animated animate__backInLeft animate__delay-2s">Espumantes</h2>
+            
         </div>
         <div class="container mt-5 mb-5">
           <div class="row">
               <div class="col-6 col-md-6 col-xl-3 p-3 rounded border border-white bg01">
                 <img src="https://bacan.uy/pub/media/catalog/product/cache/f4433f9f7f81a8f7ae5c60bfae4c38ff/1/1/11963_1.jpg" alt="Rose Brut Nature">
                 <h5 class= "color-whitesmoke"><b>Rosé Brut Nature</b></h5>
-                <p class="color-whitesmoke">Nacimos para celebrar la complejidad y la sutileza de nuestras tierras, su carácter y su calma, su elegancia y su simpleza. Un equilibrio perfecto que se expresa en nuestro sabor.</p> 
-              
+                <p class="color-whitesmoke">Nacimos para celebrar la complejidad y la sutileza de nuestras tierras, su carácter y su calma, su elegancia.</p> 
+                <br>
+                <p class="color-whitesmoke">Precio $ 1200 iva inc</p>
+                <br>
+                <button class="masinfo masinfo--destacados bg02 p-2 color-black" onclick="agregarAlCarrito('roseBrut', 1200)" >Agregar al carrito</button>
               </div>
+
               <div class="col-6 col-md-6 col-xl-3 p-3 rounded border border-white bg02">
                 <img src="https://bacan.uy/pub/media/catalog/product/cache/f4433f9f7f81a8f7ae5c60bfae4c38ff/1/1/11964_1.jpg" alt="Extra Brut">
                 <h5><b>Extra Brut</b></h5>
-                <p>Amarillo pálido con reflejos verdosos. Burbuja fina y bien integrada. Aromas cítricos, lima, pera, frutos de carozo. En boca fresco, ligero, buena acidez y mineralidad. Se presenta elegante y delicado con un largo recorrido.</p> 
-                  
+                <p>Amarillo pálido con reflejos verdosos. Burbuja fina y bien integrada. Aromas cítricos, lima, pera, frutos de carozo.</p> 
+                <br>
+                <p>Precio $ 1600 iva inc</p>
+                <br>
+                <button class="masinfo masinfo--destacados bg01 p-2" onclick="agregarAlCarrito('extraBrut', 1600)">Agregar al carrito</button>
               </div>
+
               <div class="col-6 col-md-6 col-xl-3 p-3 rounded border border-white bg01">
                 <img src="https://bacan.uy/pub/media/catalog/product/cache/f4433f9f7f81a8f7ae5c60bfae4c38ff/1/1/11960_1.jpg" alt="Delicé"> 
                   <h5 class="color-whitesmoke"><b>Delicé</b></h5>
                   <p class="color-whitesmoke"> Vino que impuso un nueva forma de consumo de burbujas: en cocteles o en con hielo. </p>
-              </div>
+                  <br>
+                  <p class="color-whitesmoke">Precio $ 1100 iva inc</p>
+                  <br>
+                  <button class="masinfo masinfo--destacados bg02 p-2 color-black" onclick="agregarAlCarrito('Delice', 1100)">Agregar al carrito</button>
+                </div>
+
               <div class="col-6 col-md-6 col-xl-3 p-3 rounded border border-white bg02">
                 <img src="https://bacan.uy/pub/media/catalog/product/cache/f4433f9f7f81a8f7ae5c60bfae4c38ff/1/1/11952.jpg" alt="Baron Rosé">
                 <h5><b>Baron Rosé</b></h5>
-                <p>Se destaca por la delicada espuma y la fineza de sus burbujas. Un sutil color salmón expresa la autenticidad y elegancia de nuestro espumante</p>
-  
+                <p>Se destaca por la delicada espuma y la fineza de sus burbujas. Un sutil color salmón expresa la autenticidad.</p>
+                <br>
+                <p>Precio $ 1500 iva inc</p>
+                <br>
+                <button class="masinfo masinfo--destacados bg01 p-2" onclick="agregarAlCarrito('baronRose', 1500)">Agregar al carrito</button>
                 
             </div>
           </div>
@@ -159,17 +195,32 @@
                 <img src="https://bacan.uy/pub/media/catalog/product/cache/f4433f9f7f81a8f7ae5c60bfae4c38ff/1/1/11832.jpg" alt="charndonnay">
                 <h5 class="color-whitesmoke"><b>Reserva Especial Chardonnay</b></h5>
                 <p class="color-whitesmoke">Intenso amarillo brillante con toques dorados, nuestro Reserva Especial Chardonnay despliega elegancia y exquisitez. Combina aromas cátricos integrados, con notas a roble tostado producto de los 4 meses que pasó en barrica. Es frutal, fresco, de excelente acidez y mineralidad. Un vino crujiente y balanceado.</p> 
+                <br>
+                <p class="color-whitesmoke">Precio $ 2.720 iva inc</p>
+                <br>
+                <button class="masinfo masinfo--destacados bg02 p-2 color-black" onclick="agregarAlCarrito('Charndonnay', 2720)">Agregar al carrito</button>
               
               </div>
+
               <div class="col-6 col-md-6 col-xl-5 p-3 rounded border border-white bg02">
                 <img src="https://bacan.uy/pub/media/catalog/product/cache/f4433f9f7f81a8f7ae5c60bfae4c38ff/1/0/10772_1.jpg" alt="Extra Brut">
                 <h5><b>Reserva Especial Souvignon Blanc</b></h5> 
-                <p>La influencia del Océano Pacífico, y el intenso color rojo de sus suelos se unieron para crear este refrescante y crujiente blanco. Un Sauvignon Blanc amarillo con toques verdes. En nariz es un vino cuyas finas notas a pomelo se combinan con aromas a manzanas verdes y duraznos blancos. Es fresco y delicado, con una boca crujiente y equilibrada, además de agradable mineralidad.</p>
-                  
+                <p>La influencia del Océano Pacífico, y el intenso color rojo de sus suelos se unieron para crear este refrescante y crujiente blanco. Un Sauvignon Blanc amarillo con toques verdes. En nariz es un vino cuyas finas notas a pomelo se combinan con aromas a manzanas verdes y duraznos blancos.</p>
+                <br>
+                <p>Precio $ 3.022 iva inc</p>
+                <br>
+                <button class="masinfo masinfo--destacados bg01 p-2" onclick="agregarAlCarrito('souvignonBlanc', 780)">Agregar al carrito</button>
               </div>
               
           </div>
         </div>
+
+        <div id="divCarritoEfectuarCompra" class="d-ocultar" style="position: fixed;z-index: 99;bottom: 0px;width: 100%;text-align: center; background-color: #19152070;">
+          <button id="btnCarritoEfectuarCompra" class="btn btn-danger" onclick="realizarCompra()" style="margin-top: 10px;margin-bottom: 10px;">Comprar $ 3300</button>
+          <span onclick="cerrarDivCarrito()" style="float: right;color: white;margin-right: 5px;">x</span>
+          </div>
+
+        
     
     </section>
     
